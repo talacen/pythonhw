@@ -1,43 +1,47 @@
-# def append_middle(s1, s2):
-#     print("Original Strings are", s1, s2)
-#     mi = int(len(s1) / 2)
-#     x = s1[:mi:]
-#     x = x + s2
-#     x = x + s1[mi:]
-#     print("After appending new string in middle:", x)
+############################  1
+def is_leap(year):
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    if year % 4 == 0:
+        return True
+    return False
 
-# append_middle("Ault", "Kelly")
+print(is_leap(2000))  
+print(is_leap(1900)) 
+print(is_leap(2024))  
+
+############################  2
+def check_weird(n):
+    if n % 2 == 1:
+        print("Weird")
+    elif 2 <= n <= 5:
+        print("Not Weird")
+    elif 6 <= n <= 20:
+        print("Weird")
+    else:
+        print("Not Weird")
 
 
+check_weird(3) 
+check_weird(24)  
+
+############################ 3
+def find_evens_if_else(a, b):
+    if a % 2 != 0:
+        a += 1  
+    if b % 2 != 0:
+        b -= 1  
+    return list(range(a, b + 1, 2))
 
 
-# def mix_string(s1, s2):
-#     first_char = s1[0] + s2[0]
-#     middle_char = s1[int(len(s1) / 2):int(len(s1) / 2) + 1] + s2[int(len(s2) / 2):int(len(s2) / 2) + 1]
-#     last_char = s1[len(s1) - 1] + s2[len(s2) - 1]
-#     res = first_char + middle_char + last_char
-#     print("Mix String is ", res)
-
-# s1 = "America"
-# s2 = "Japan"
-# mix_string(s1, s2)
+print(find_evens_if_else(3, 10)) 
 
 
+def find_evens_no_if_else(a, b):
+    return list(range(a + (a % 2), b + 1, 2))
 
-# def find_digits_chars_symbols(sample_str):
-#     char_count = 0
-#     digit_count = 0
-#     symbol_count = 0
-#     for char in sample_str:
-#         if char.isalpha():
-#             char_count += 1
-#         elif char.isdigit():
-#             digit_count += 1
-#         else:
-#             symbol_count += 1
 
-#     print("Chars =", char_count, "Digits =", digit_count, "Symbol =", symbol_count)
+print(find_evens_no_if_else(3, 10)) 
 
-# sample_str = "P@yn2at&#i5ve"
-# print("total counts of chars, Digits, and symbols \n")
-# find_digits_chars_symbols(sample_str)
