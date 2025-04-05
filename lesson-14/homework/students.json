@@ -1,0 +1,57 @@
+{
+    "Student":
+                [
+                    {
+                        "id":7,
+                        "name":"Alex",
+                        "age":25,
+                        "pets":["dogs","cats","bird"],
+                        "FamilyMembers":
+                            [
+                                {
+                                    "name":"David",
+                                    "age":56,
+                                    "relative":"father"
+                                    
+                                },
+                                {
+                                    "name":"Sara",
+                                    "age":53,
+                                    "relative":"mother"
+                                    
+                                },
+                                {
+                                    "name":"Rob",
+                                    "age":26,
+                                    "relative":"brother"
+                                }
+                            ]
+                    },
+                    {
+                        "id":8,
+                        "name":"Mironshox",
+                        "age":19,
+                        "pets":["dogs","cats","bird"],
+                        "FamilyMembers":
+                            [
+                                {
+                                    "name":"A",
+                                    "age":45,
+                                    "relative":"father"
+                                    
+                                },
+                                {
+                                    "name":"B",
+                                    "age":42,
+                                    "relative":"mother"
+                                    
+                                },
+                                {
+                                    "name":"Islom",
+                                    "age":21,
+                                    "relative":"brother"
+                                }
+                            ]
+                    }
+                ]
+}
